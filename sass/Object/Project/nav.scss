@@ -1,0 +1,13 @@
+.p-nav{
+  margin-right: $space_3l;
+  &__menu{
+    display: flex;
+    @include mq(){
+      display: block;
+      text-align: center;
+    }
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+}

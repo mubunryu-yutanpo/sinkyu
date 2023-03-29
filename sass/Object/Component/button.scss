@@ -1,0 +1,23 @@
+.c-button{
+  text-align: center;
+  &__continue{
+    color: $button_col_default;
+    margin: $space_default auto $space_l;
+    display: inherit;
+    border-bottom: 1px dashed #333;
+  }
+  &__slide{
+    &-col1{
+      font-size: $font-size_default;
+      width: 100%;
+      padding: $space_default;
+      background: $button_col_1;
+    }
+    &-col2{
+      font-size: $font-size_default;
+      width: 100%;
+      padding: $space_default;
+      background: $button_col_2;
+    }
+  }
+}

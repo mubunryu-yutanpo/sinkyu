@@ -1,0 +1,65 @@
+.c-baner{
+  margin: $space_2l auto;
+  text-align: center;
+  background: $color_palette_2;
+  border-radius: 4px;
+  padding: $space_default;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    &-text{
+      padding: 0 $space-s;
+    }
+    &-img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  &__icon{
+    font-size: 60px;
+    color: $color_accent;
+  }
+  &__price{
+    text-align: center;
+    margin: $space_l auto;
+    width: 50%;
+    &-style{
+      color: red;
+      white-space: nowrap;
+    }
+    &-txt{
+      background-image: linear-gradient(transparent 60%, $button_col_2);
+      font-size: 45px;
+    }
+  }
+  &__contact{
+    width: 95%;
+    background: #ffc4d0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: $space_default auto;
+    box-shadow: 0 7px #dec8cf;
+    box-sizing: border-box;
+    transition: all 1s;
+    &:hover{
+      background: $color_accent;
+      transform: translateY(8px);
+      transition: all 1s;
+      box-shadow: none;
+    }
+    &-link{
+      cursor: pointer;
+      padding: 30px 30%;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      white-space: nowrap;
+      &:hover{
+        color: $color_palette_2;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.c-menu{
+  @include mq(){
+    width: 100%;
+    height: 100vh;
+    background: $color_palette_2;
+    position: absolute;
+    padding-top: $space_4l;
+    transition: .7s;
+    top: 0;
+    right: -100%;
+    z-index: 3;
+    &.active{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      transition: 1s;
+      right: 0;
+    }
+  }
+  &__item{
+    list-style: none;
+    margin-right: $space_m;
+    @include mq(){
+      font-size: $font-size_3l;
+      margin: $space_default 0;
+    }
+  }
+  &__link{
+    color:$font_col_default;
+    text-decoration: none;
+    padding: $space-2l;
+  }
+}

@@ -1,0 +1,59 @@
+.c-foot{
+  &__title{
+    font-size: $font-size_xl;
+    text-align: center;
+    &-about{
+      font-size: $font-size_s;
+      text-align: center;
+    }
+  }
+  &__about{
+    width: 50%;
+    @include mq(){
+      width: 100%;
+    }
+    &-name{
+      margin-bottom: $space_m;
+    }
+    &-txt{
+      font-size: $font-size_s;
+    }
+  }
+  &__img{
+    width: 50%;
+    @include mq(){
+      width: 100%;
+    }
+    &-item{
+      width: 150px;
+      height:150px;
+      border-radius:50%;
+    }
+  }
+  &__introduce{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin: $space_3l 0;
+    @include mq(){
+      display: block;
+      text-align: center;
+    }
+  }
+  &__menu{
+    margin-bottom: $space_3l;
+    display: flex;
+    justify-content: center;
+    &-item{
+      text-decoration: none;
+    }
+  }
+  &__icon{
+    text-align: center;
+    &-item{
+      color: #000;
+      font-size: $font-size_xl;
+    }
+  }
+
+}

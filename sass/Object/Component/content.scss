@@ -1,0 +1,13 @@
+.c-content{
+  overflow: hidden;
+  padding: 25px 10px 10px 10px;
+  margin: $space_default 0;
+	text-align:left;
+  &__img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: $space_default;
+      float: right;
+  }
+}

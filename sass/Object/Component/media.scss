@@ -1,0 +1,23 @@
+.c-media{
+  &__title{
+    margin: $space_2l;
+    text-align: center;
+    &-icon{
+      font-size: $font-size_default;
+      color: $color_accent;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: center;
+  }
+  &__img{
+    height: 200px;
+    width: auto;
+    @include mq(){
+      width: 40%;
+      height: auto;
+      min-height: 100px;
+    }
+  }
+}

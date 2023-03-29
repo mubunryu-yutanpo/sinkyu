@@ -1,0 +1,57 @@
+.p-slide{
+  width: 100vw;
+  height: 700px;
+  @include mq(){
+    height: 500px;
+  }
+  position: relative;
+  &::before{
+    content: '';
+    background: rgba(255,255,255,.5);
+    width: 100vw;
+    height: 700px;
+    @include mq(){
+      height: 500px;
+    }
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  &__img{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    @include mq(){
+      height: 500px;
+    }
+    opacity: 0;
+    top: 0;
+    transition: all 2s;
+    z-index: -2;
+    &.active{
+      opacity: 1;
+      transition: all 2.5s;
+    }
+  }
+  &__txt{
+    font-size: $font-size_xl;
+    text-align: center;
+    width: 80%;
+    @include mq(){
+      width: 90%;
+      font-size: $font-size_l;
+    }
+    margin: 0 auto;
+    padding-top: 350px;
+    @include mq(){
+      padding-top: 250px;
+    }
+    br{
+      display: none;
+      @include mq(){
+        display: block;
+      }
+    }
+  }
+
+}

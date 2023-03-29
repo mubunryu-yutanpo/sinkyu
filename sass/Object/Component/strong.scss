@@ -1,0 +1,19 @@
+.c-strong{
+  width: 95%;
+  margin: $space_default auto;
+  border: $border-pattern-2;
+  text-align: center;
+  &__img-wrap{
+    display: flex;
+    justify-content: center;
+  }
+  &__img{
+    width:150px;
+    height:150px;
+    margin: 0 15px 15px 0;
+    border-radius:0%;
+  }
+  &__icon{
+    color: $color_accent;
+  }
+}

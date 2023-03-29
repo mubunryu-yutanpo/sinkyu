@@ -1,0 +1,12 @@
+.u-align{
+  &__r{
+    text-align: right;
+  }
+  &__c{
+    text-align: center;
+  }
+  &__l{
+    text-align: left;
+    padding-left: $space_l; 
+  }
+}

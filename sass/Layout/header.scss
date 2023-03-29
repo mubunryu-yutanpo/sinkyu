@@ -1,0 +1,25 @@
+.header{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 $space_l;
+    width: 100vw;
+    top: 0;
+    height: 80px;
+    transition: .3s;
+    z-index: 4;
+    @include mq(){
+      height: 60px;
+      padding: 0 $space_default;
+    }
+    &.active{
+      background: $color_palette_2;
+      transition: .3s;
+    }
+}
+.site-title{
+    font-weight: bold;
+    font-size: $font-size_l;
+}

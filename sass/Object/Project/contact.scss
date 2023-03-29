@@ -1,0 +1,13 @@
+.p-contact{
+  &__accent{
+    background: $border-pattern-line;
+  }
+  &__box{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: $space_4l;
+  }
+  &__link{
+    color: $button_col_default;
+  }
+}

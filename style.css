@@ -1,0 +1,234 @@
+button{
+	margin:0;
+	padding:0;
+	border:none;
+	background:none;
+	color:#333;
+}
+div.wrap{
+  margin: 0 auto;
+  padding: 0 10px;
+}
+a{
+	text-decoration:none;
+	box-shadow:none;
+}
+
+/*=========================
+トップ画像のスライドショー用
+==========================*/
+.slide-container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 320px;
+	position: relative;
+}
+.js-slide-list{
+	width: 100%;
+	height: 320px;
+	opacity: 0;
+	position: absolute;
+	z-index: 0;
+	list-style: none;
+	transition: opacity 2.5s;
+	-moz-transition: opacity 2.5s;
+	-o-transition: opacity 2.5s;
+	-ms-transition: opacity 2.5s;
+
+}
+.js-slide-list.active{
+	opacity: 1;
+	z-index: 1;
+	transition: opacity 3s;
+	-moz-transition: opacity 3s;
+	-o-transition: opacity 3s;
+	-ms-transition: opacity 3s;
+}
+.slide-img{
+	width: 100%;
+	height: 300px;
+}
+
+
+
+.entry-content a{
+	box-shadow:none;
+}
+.entry-content a:hover{
+	box-shadow:none;
+  color:blue;
+}
+.js-text-btn{
+  text-align: center;
+  margin: 0 auto;
+  display: inherit;
+  border-bottom: 1px dashed #333;
+}
+.js-show-text{
+  display: none;
+}
+.js-show-text.on{
+  display: block;
+}
+.fa-square-check:before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f14a';
+  font-weight: 900;
+  font-size: 25px;
+  color: #FFC4D0;
+}
+.fa-angles-down:before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f103';
+  font-weight: 900;
+  font-size:50px;
+  color: #FFC4D0;
+}
+.fa-sort-down{
+  font-family: "Font Awesome 5 Free";
+  content: '\f0dd';
+  font-weight: 900;
+  font-size:15px;
+  color: #333;
+}
+.fa-thumbs-up{
+  font-family: "Font Awesome 5 Free";
+  content: '\f164';
+  font-weight: 900;
+  font-size:20px;
+  color: #FFC4D0;
+	margin-right:10px;
+}
+.customer-container{
+  background: #FCF5EE;
+  padding: 15px;
+  margin: 30px 0;
+}
+.customer-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.customer-img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+問診のとこ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+.content-container{
+  width: 95%;
+  margin: 15px auto;
+  border: 1px solid #F7DDDE;
+  text-align: center;
+}
+.content-btn{
+  width: 100%;
+  padding: 15px;
+  background: #FCF5EE;
+  border: none;
+}
+.content-text{
+	margin-top: 30px;
+}
+.content-wrap{
+  overflow: hidden;
+  padding: 25px 10px 10px 10px;
+  margin: 15px 0;
+	text-align:left;
+}
+.content-wrap img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+/*============================
+理由のところ
+==============================*/
+.img-wrap{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*============================
+強調する箇所
+==============================*/
+.point-style{
+  border-bottom:2px solid rgba(241, 77, 77, 0.8);
+  font-weight: bold;
+}
+
+/*===========================
+料金と予約のバナー
+============================*/
+
+.price-container{
+  width: 95%;
+  margin: 25px auto;
+  text-align: center;
+  background: #FCF5EE;
+  padding: 15px;"
+}
+.price-content-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.baner-img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+.price-contact-box{
+  width: 95%;
+  background: #FFC4D0;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin: 15px;
+	box-shadow: 5px 10px 5px #dec8cf;
+	transition: all 1s;
+}
+.price-contact-box:hover{
+	background: #f7bba1;
+	transform: translateY(-10px);
+	transition: all 1s;
+	box-shadow: 5px 5px 15px #dec8cf;
+}
+.price-contact-link{
+  cursor: pointer;
+  padding: 30px 30%;
+  color: #333;
+  text-decoration: none;
+  font-weight:bold;
+  white-space: nowrap;
+}
+.price-parent-style{
+  color: red;
+  margin:20px auto;
+  width: 50%;
+  white-space: nowrap;
+}
+.price-style{
+  background-image: linear-gradient(transparent 60%, #F7DDDE 0%);
+  font-size: 45px;
+}
+.price-content-text{
+  padding: 0 5px;
+}
+
+/*===========================
+保障
+============================*/
+.security-text{
+  font-weight:bold;
+  background-image: linear-gradient(transparent 60%, #F7DDDE 0%);
+  font-size:20px;
+}

@@ -1,0 +1,20 @@
+.c-text{
+  &__underline{
+    background: $border-pattern-accent;
+  }
+  &__border-bottom{
+    border-bottom: $border-pattern-1;
+  }
+  &__border-box{
+    border: $border-pattern-1;
+    padding: $space_default;
+    margin: $space_default 0;
+    box-sizing: border-box;
+  }
+  &__bold{
+    font-size: $font-size_l;
+    font-weight: bold;
+    text-align: center;
+    margin: $space_3l auto;
+  }
+}
